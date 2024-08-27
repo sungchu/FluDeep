@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 !pip install --upgrade pip
+!pip install setuptools
 
+import setuptools.dist
 import time
 import streamlit as st
 import numpy as np
