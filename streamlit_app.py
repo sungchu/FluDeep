@@ -13,7 +13,7 @@ import os
 from PIL import Image
 import pickle
 import matplotlib.pyplot as plt
-import pydicom
+#import pydicom
 from sklearn.svm import SVC
 import joblib
 
