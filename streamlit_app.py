@@ -83,7 +83,7 @@ with col4:
         image = cv2.resize(image, (299, 299))
         uploaded_image.append(image/255.0)
 
-        model = keras.models.load_model('xception_mse_mse0.9446_val_mse1.1390.h5')
+        model = keras.models.load_model('DeepFluXR_MSE0.9446.h5')
         pred = model.predict(np.array(uploaded_image))
         if pred > 5.0:  pred = 5.0
         if pred < 1.0:  pred = 1.0  
@@ -94,12 +94,12 @@ with col4:
         columns = ['Gender', 'Age', 'BMI', 'Diastolic_blood_pressure', 'Heart_rate', 'Respiratory_rate', 'Creatinine', 'CRP', 'Hemoglobin', 'Bicarbonate', 
                    'PCO2', 'pH', 'Platelet', 'PO2',  'Blood_urea_nitrogen', 'Lactic_acid', 'INR', 'Glucose', 'Hematocrit'])
         
-        with open('../structure_data_remove_Lymphocyte_Troponin/LightGBM_withoutCXR_v2_AUC0.8103.pickle', 'rb') as f:
+        with open('LightGBM_withoutCXR_v2_AUC0.8103.pickle', 'rb') as f:
             LightGBM = pickle.load(f)
         LightGBM_result = LightGBM.predict_proba(dataset)[:, 1]
 
         df = pd.DataFrame({"pred":[float(pred)],"LightGBM":[float(LightGBM_result)]})
-        clf = joblib.load('../structure_data_CXR_remove_Lymphocyte_Troponin/Late_Fusion_RF_lr_AUC0.8371.pickle')
+        clf = joblib.load('Late_Fusion_RF_lr_AUC0.8371.pickle')
         SVC_result = clf.predict_proba(df)[:, 1]
         SVC_result2 = clf.predict(df)
 
