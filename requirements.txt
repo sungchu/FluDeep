@@ -2,6 +2,6 @@ scikit-learn == 1.0.2
 matplotlib == 3.5.1  
 tensorflow == 2.5.0
 keras == 2.4.3  
-opencv-python
+opencv-python == 2.4.9
 tqdm == 4.66.2
 streamlit
