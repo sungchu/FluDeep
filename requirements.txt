@@ -1,9 +1,9 @@
 scikit-learn == 1.0.2
 matplotlib == 3.5.1  
-#tensorflow == 2.5.0
+tensorflow == 2.5.0
 #keras == 2.4.3  
-tensorflow-cpu==2.4.0
-keras==2.4.0
+#tensorflow-cpu==2.4.0
+#keras==2.4.0
 opencv-python
 tqdm == 4.66.2
 streamlit
