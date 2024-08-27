@@ -16,6 +16,7 @@ import matplotlib.pyplot as plt
 #import pydicom
 from sklearn.svm import SVC
 import joblib
+import lightgbm
 
 st.set_page_config(layout="wide")
 st.title('FluDeep Grading System')
