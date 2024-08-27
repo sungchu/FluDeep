@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 # coding: utf-8
-!pip install --upgrade pip
-!pip install setuptools
 
 import setuptools.dist
 import time
