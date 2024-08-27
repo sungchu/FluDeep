@@ -4,6 +4,6 @@ tensorflow == 2.5.0
 #keras == 2.4.3  
 #tensorflow-cpu==2.4.0
 #keras==2.4.0
-opencv-python
+opencv-python-headless
 tqdm == 4.66.2
 streamlit
