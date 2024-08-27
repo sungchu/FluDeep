@@ -7,3 +7,4 @@ tensorflow == 2.5.0
 opencv-python-headless
 tqdm == 4.66.2
 streamlit
+lightgbm
