@@ -4,7 +4,7 @@ FluDeep is a binary classification model which can predict 30-day influenza mort
 
 
 ## Requirement
-sklearn == 1.0.2  
+scikit-learn == 1.0.2  
 scikitplot == 0.3.7  
 matplotlib == 3.5.1  
 tensorflow == 2.4.0  
