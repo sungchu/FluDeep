@@ -4,3 +4,4 @@ tensorflow == 2.4.0
 keras == 2.4.3  
 cv2 == 4.5.3  
 tqdm == 4.66.2
+streamlit
