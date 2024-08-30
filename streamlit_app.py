@@ -114,9 +114,8 @@ st.write('**ABOUT THE CRREATOR**')
 st.write("Chien-Chang Lee MD, ScD Chien-Chang Lee MD, ScD, is the Director of Department of Information Management, Ministry of Health and Welfare. He is also a physician in Department of Emergency Medicine at National Taiwan University Hospital and vice deputy of Health Data Science Research Group at National Taiwan University Hospital.")
 st.write('**WHEN TO USE**')
 st.write("The FluDeep score is the first stratification schema combining chest X-ray and clinical data helps determine the 30 day risk of mortality in specifically targeting patients with influenza pneumonia. The FluDeep score can be used to provide an idea of a patient’s distributions in the emergency department and primary care clinics.")
-st.write("**INTERPRETATION**")
+st.write("**INTERPRETATION OF FluDeep-XR SCORE**")
 st.write("""
-**FluDeep-XR score**  
 1 for Normal lung  
 2 for Hyperinflation and/or bronchial wall thickening  
 3 for Focal alveolar consolidation limited in a single lobe  
