@@ -26,13 +26,14 @@ st.text("Chien-Chang Lee MD, ScD Chien-Chang Lee MD, ScD, is the Director of Dep
 st.markdown('#### WHEN TO USE')
 st.text("The FluDeep score is the first stratification schema combining chest X-ray and clinical data helps determine the 30 day risk of mortality in specifically targeting patients with influenza pneumonia. The FluDeep score can be used to provide an idea of a patient’s distributions in the emergency department and primary care clinics.")
 st.markdown("#### INTERPRETATION")
-st.columns(2, [st.text('z'), st.text('x')])
-st.text("FluDeep-XR score")
-st.text("1 for Normal lung")
-st.text("2 for Hyperinflation and/or bronchial wall thickening")
-st.text("3 for Focal alveolar consolidation limited in a single lobe")
-st.text("4 for Multifocal consolidation")
-st.text("5 for Diffuse alveolar consolidation and/or pleural effusion involving the upper lobe on at least one lung")
+st.write("""
+**FluDeep-XR score**
+1 for Normal lung
+2 for Hyperinflation and/or bronchial wall thickening
+3 for Focal alveolar consolidation limited in a single lobe
+4 for Multifocal consolidation
+5 for Diffuse alveolar consolidation and/or pleural effusion involving the upper lobe on at least one lung
+""")
 st.markdown("#### EVIDENCE APPRAISAL")
 st.text("The FluDeep was derived from a retrospective observational cohort study based upon antigen positively tested influenza patients admitted to  tertiary level hospitals in Taiwan and Italy. The score includes a chest X-ray and ninteen variables. The system predicts 30 day in-hospital survival rate.")
 st.text("The score performed well in the internal validation of the study along with external validation studies. Overall generalizability of the score needs to be further investigated as it was derived and validated in a primarily homogeneous ethnic and age cohort.")
