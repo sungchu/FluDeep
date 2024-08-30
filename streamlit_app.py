@@ -35,8 +35,7 @@ st.write("""
 5 for Diffuse alveolar consolidation and/or pleural effusion involving the upper lobe on at least one lung  
 """)
 st.markdown("#### EVIDENCE APPRAISAL")
-st.write("The FluDeep was derived from a retrospective observational cohort study based upon antigen positively tested influenza patients admitted to  tertiary level hospitals in Taiwan and Italy. The score includes a chest X-ray and ninteen variables. The system predicts 30 day in-hospital survival rate.")
-st.write("The score performed well in the internal validation of the study along with external validation studies. Overall generalizability of the score needs to be further investigated as it was derived and validated in a primarily homogeneous ethnic and age cohort.")
+st.write("The FluDeep was derived from a retrospective observational cohort study based upon antigen positively tested influenza patients admitted to  tertiary level hospitals in Taiwan and Italy. The score includes a chest X-ray and ninteen variables. The system predicts 30 day in-hospital survival rate. The score performed well in the internal validation of the study along with external validation studies. Overall generalizability of the score needs to be further investigated as it was derived and validated in a primarily homogeneous ethnic and age cohort.")
 col1, col2, col3, col4 = st.columns((1,1,1,2))
 
 
