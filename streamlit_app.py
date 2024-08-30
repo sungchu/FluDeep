@@ -20,14 +20,15 @@ import lightgbm
 
 st.set_page_config(layout="wide")
 st.title('FluDeep Grading System')
-
+st.header('FluDeep')
+st.subheader('Prediction of influenza pneumonia 30-day mortality')
 col1, col2, col3, col4 = st.columns((1,1,1,2))
 
 
 
 with col1:
     # Gender
-    status = st.radio("Gender", ('male', 'female'))
+    status = st.radio("Sex", ('male', 'female'))
     Gender = 1 if status == 'male' else 0
     # Age
     Age = st.number_input(label = 'Age (years old)', min_value = 0.0)
