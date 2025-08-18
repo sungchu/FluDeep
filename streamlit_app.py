@@ -85,7 +85,8 @@ with col4:
         image = cv2.resize(image, (299, 299))
         uploaded_image.append(image/255.0)
 
-        model = keras.models.load_model('DeepFluXR_MSE0.9446.h5')
+#        model = keras.models.load_model('DeepFluXR_MSE0.9446.h5')
+        model = tf.keras.models.load_model("DeepFluXR_MSE0.9446.h5")
         pred = model.predict(np.array(uploaded_image))
         if pred > 5.0:  pred = 5.0
         if pred < 1.0:  pred = 1.0  
