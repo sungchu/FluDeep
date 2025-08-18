@@ -89,8 +89,8 @@ with col4:
 #        model = tf.keras.models.load_model("DeepFluXR_MSE0.9446.h5", compile=False)
 
         import gdown
-        url = "https://drive.google.com/file/d/1P2K_IG2ToPg2ibossRh04LNVosrY6oWy/view?usp=sharing"
-        output = "DeepFluXR_MSE0.9446.h5"
+        url = "https://drive.google.com/file/d/1b_3F8HWlvQMBFden0am-FC372dfd16VS/view?usp=sharing"
+        output = "xception_mse0.8931_val_mse1.2649_new.hdf5"
         gdown.download(url, output, quiet=False)
         model = tf.keras.models.load_model(output)
 
