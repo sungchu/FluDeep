@@ -5,3 +5,7 @@ opencv-python-headless
 tqdm == 4.66.2
 streamlit
 lightgbm == 4.5.0
+streamlit==1.35.0
+altair==4.2.2
+jsonschema<4.17
+referencing<0.30
