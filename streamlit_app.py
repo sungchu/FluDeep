@@ -89,7 +89,7 @@ with col4:
 #        model = tf.keras.models.load_model("DeepFluXR_MSE0.9446.h5", compile=False)
 
         import gdown
-        url = "https://drive.google.com/file/d/1b_3F8HWlvQMBFden0am-FC372dfd16VS/view?usp=sharing"
+        url = "https://drive.google.com/uc?id=1b_3F8HWlvQMBFden0am-FC372dfd16VS"
         output = "xception_mse0.8931_val_mse1.2649_new.hdf5"
         st.write(os.access(output, os.R_OK))
         gdown.download(url, output, quiet=False)
