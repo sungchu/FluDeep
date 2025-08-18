@@ -86,7 +86,14 @@ with col4:
         uploaded_image.append(image/255.0)
 
 #        model = keras.models.load_model('DeepFluXR_MSE0.9446.h5')
-        model = tf.keras.models.load_model("DeepFluXR_MSE0.9446.h5", compile=False)
+#        model = tf.keras.models.load_model("DeepFluXR_MSE0.9446.h5", compile=False)
+
+        import gdown
+        url = "https://aep.ntuh.gov.tw/public.php?service=files&t=ZfPDqpO8quc7-u6AZ0ZYRaZ0TPT22ix2IgO35PgEiJgUi_k7RitDD0kaLxlTXt_T"
+        output = "DeepFluXR_MSE0.9446.h5"
+        gdown.download(url, output, quiet=False)
+        model = tf.keras.models.load_model(output)
+
         pred = model.predict(np.array(uploaded_image))
         if pred > 5.0:  pred = 5.0
         if pred < 1.0:  pred = 1.0  
