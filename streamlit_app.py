@@ -84,7 +84,9 @@ with col4:
         image = cv2.cvtColor(np.array(image), cv2.COLOR_GRAY2BGR)
         image = cv2.resize(image, (299, 299))
         uploaded_image.append(image/255.0)
-
+        import os
+        print("Current working dir:", os.getcwd())
+        print("Files in dir:", os.listdir())
 #        model = keras.models.load_model('DeepFluXR_MSE0.9446.h5')
         model = tf.keras.models.load_model("DeepFluXR_MSE0.9446.h5")
         pred = model.predict(np.array(uploaded_image))
