@@ -88,7 +88,6 @@ with col4:
         st.write("Current working dir:", os.getcwd())
         st.write("Files in dir:", os.listdir())
         import h5py
-
         with h5py.File("DeepFluXR_MSE0.9446.h5", "r") as f:
             st.write(list(f.keys()))
         
