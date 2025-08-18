@@ -87,13 +87,8 @@ with col4:
         import os
         st.write("Current working dir:", os.getcwd())
         st.write("Files in dir:", os.listdir())
-        import h5py
-        with h5py.File("DeepFluXR_MSE0.9446.h5", "r") as f:
-            st.write(list(f.keys()))
-        
-        
 #        model = keras.models.load_model('DeepFluXR_MSE0.9446.h5')
-        model = tf.keras.models.load_model("DeepFluXR_MSE0.9446.h5")
+        model = tf.keras.models.load_model("DeepFluXR_MSE0.9446.h5", compile=False)
         pred = model.predict(np.array(uploaded_image))
         if pred > 5.0:  pred = 5.0
         if pred < 1.0:  pred = 1.0  
